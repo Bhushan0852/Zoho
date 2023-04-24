@@ -1,0 +1,121 @@
+# .gitignore for .NET Core 6 project
+
+# Compiled files
+*.dll
+*.exe
+*.pdb
+*.dll.mdb
+*.exe.mdb
+
+# NuGet packages
+*.nuget/
+*.nupkg
+*.snupkg
+
+# User-specific files
+*.user
+.user.
+
+# Build output
+/bin/
+/obj/
+/TestResults/
+
+# .NET Core artifacts
+.dotnet-
+*.dotnet-*/.
+
+# Visual Studio generated files
+.vs/
+.vscode/
+*.sln.docstates
+*.suo
+*.userprefs
+*.launchsettings.json
+*.vssettings
+*.csproj.user
+*.vcxproj.user
+*.pubxml
+
+# Roslyn analyzer cache
+/.roslynator.cache
+
+# Build results of an MSBuild run
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]ny/[Dd]ebug/
+[Aa]ny/[Rr]elease/
+[Aa]ny/x64/
+[Aa]ny/x86/
+/*.sqlite
+
+# Resharper
+_ReSharper.*/
+*.ReSharper.user
+*.resharper
+
+# Rider
+.idea/
+*.sln.iml
+*.ipr
+*.iws
+*.ide
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Test files
+*.testsettings
+*.testhost.dll
+*.testhost.exe
+
+# NCrunch
+.ncrunch
+_NCrunch_*
+.*crunch*.local.xml
+
+# Build and test logs
+TestResults/
+[Bb]uild[Ll]og.*
+msbuild.log*
+TestLog.*
+*.TestResults.xml
+*.TestSession.xml
+*.trx
+
+# GhostDoc
+[Gg]host[Dd]oc.*
+
+# DocFX
+_docfx/
+*_site/
+
+# Miscellaneous
+*.cache
+*.log
+*.bak
+*.swp
+*.tmp
+.tmp.
+.bak.
+.swp.
+*~
+
+# Publish profiles
+*.pubxml
+*.pubxml.user
+*.pubxml.pubxml
+
+# MSIX Packaging
+*.msixupload
+*.appinstaller
+
+# Ignore Visual Studio Code folder settings
+.vscode/settings.json
+
+# Ignore Visual Studio temporary files
+.vscode/.mdncore-temp/**/

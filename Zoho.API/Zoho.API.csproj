@@ -17,6 +17,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Zoho.Data\Zoho.Data.csproj" />
+    <ProjectReference Include="..\Zoho.IRepository\Zoho.Interface.csproj" />
+    <ProjectReference Include="..\Zoho.Repository\Zoho.Repository.csproj" />
   </ItemGroup>
 
 </Project>

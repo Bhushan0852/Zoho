@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoho.Data\Zoho.Data.csproj" />
+    <ProjectReference Include="..\Zoho.DTOs\Zoho.DTOs.csproj" />
+    <ProjectReference Include="..\Zoho.IRepository\Zoho.Interface.csproj" />
+  </ItemGroup>
+
+</Project>

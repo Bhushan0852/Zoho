@@ -11,5 +11,6 @@ namespace Zoho.Data
         }
 
         public DbSet<Currency> Currencies{ get; set; }
+
     }
 }

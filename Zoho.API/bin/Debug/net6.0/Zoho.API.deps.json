@@ -11,7 +11,9 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
           "Swashbuckle.AspNetCore": "6.2.3",
-          "Zoho.Data": "1.0.0"
+          "Zoho.Data": "1.0.0",
+          "Zoho.Interface": "1.0.0",
+          "Zoho.Repository": "1.0.0"
         },
         "runtime": {
           "Zoho.API.dll": {}
@@ -761,6 +763,30 @@
         "runtime": {
           "Zoho.Domain.dll": {}
         }
+      },
+      "Zoho.DTOs/1.0.0": {
+        "runtime": {
+          "Zoho.DTOs.dll": {}
+        }
+      },
+      "Zoho.Interface/1.0.0": {
+        "dependencies": {
+          "Zoho.DTOs": "1.0.0",
+          "Zoho.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Zoho.Interface.dll": {}
+        }
+      },
+      "Zoho.Repository/1.0.0": {
+        "dependencies": {
+          "Zoho.DTOs": "1.0.0",
+          "Zoho.Data": "1.0.0",
+          "Zoho.Interface": "1.0.0"
+        },
+        "runtime": {
+          "Zoho.Repository.dll": {}
+        }
       }
     }
   },
@@ -1294,6 +1320,21 @@
       "sha512": ""
     },
     "Zoho.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Zoho.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Zoho.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Zoho.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

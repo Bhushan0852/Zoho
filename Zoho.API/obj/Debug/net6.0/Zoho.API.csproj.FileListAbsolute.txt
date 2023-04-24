@@ -14,7 +14,6 @@ D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\Zoho.API.GeneratedMSBuildEd
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\Zoho.API.AssemblyInfoInputs.cache
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\Zoho.API.AssemblyInfo.cs
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\Zoho.API.csproj.CoreCompileInputs.cache
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\Zoho.API.MvcApplicationPartsAssemblyInfo.cs
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\Zoho.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\staticwebassets.build.json
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\staticwebassets.development.json
@@ -84,3 +83,9 @@ D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Data.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Domain.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Data.pdb
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Domain.pdb
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Interface.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Repository.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Interface.pdb
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Repository.pdb
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.DTOs.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.DTOs.pdb

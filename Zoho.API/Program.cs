@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Zoho.Data;
+using Zoho.Interface;
+using Zoho.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,8 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("ZohoConnectionString"));
 });
+
+builder.Services.AddScoped<IClientRepository, ClientRepository>();
 
 var app = builder.Build();
 

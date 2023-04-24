@@ -1,0 +1,12 @@
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\bin\Debug\net6.0\Zoho.Domain.deps.json
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\bin\Debug\net6.0\Zoho.Domain.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\bin\Debug\net6.0\Zoho.Domain.pdb
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\obj\Debug\net6.0\Zoho.Domain.csproj.AssemblyReference.cache
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\obj\Debug\net6.0\Zoho.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\obj\Debug\net6.0\Zoho.Domain.AssemblyInfoInputs.cache
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\obj\Debug\net6.0\Zoho.Domain.AssemblyInfo.cs
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\obj\Debug\net6.0\Zoho.Domain.csproj.CoreCompileInputs.cache
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\obj\Debug\net6.0\Zoho.Domain.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\obj\Debug\net6.0\refint\Zoho.Domain.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\obj\Debug\net6.0\Zoho.Domain.pdb
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Domain\obj\Debug\net6.0\ref\Zoho.Domain.dll

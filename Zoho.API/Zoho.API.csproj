@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
@@ -16,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Zoho.AutoMapper\Zoho.AutoMapper.csproj" />
     <ProjectReference Include="..\Zoho.Data\Zoho.Data.csproj" />
     <ProjectReference Include="..\Zoho.IRepository\Zoho.Interface.csproj" />
     <ProjectReference Include="..\Zoho.Repository\Zoho.Repository.csproj" />

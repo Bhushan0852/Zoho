@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Zoho.AutoMapper;
 using Zoho.Data;
 using Zoho.Interface;
 using Zoho.Repository;
@@ -18,6 +19,8 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 });
 
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
+
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 var app = builder.Build();
 

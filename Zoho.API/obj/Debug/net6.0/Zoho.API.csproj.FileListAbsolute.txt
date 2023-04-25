@@ -89,3 +89,8 @@ D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Interface.pdb
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Repository.pdb
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.DTOs.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.DTOs.pdb
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\Zoho.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\AutoMapper.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.AutoMapper.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.AutoMapper.pdb

@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "OJqw84zGUztkuC3BI5mVWDiN0qRwyQAtBYE4GuF7FbK6jL+yFyTAn7VJ5/xK8qxObP4ISW5EZLHSdG7s919OSg==",
+  "dgSpecHash": "pK4FSZgwEQDQ6lXRiGlKo7e6wARh7KW1VBUBUlx+TCkSkcZEzn++ILP2OhGQ12Zwb7v2Q68NbJi2RlgoWvXNbA==",
   "success": true,
   "projectFilePath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.API\\Zoho.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\BhushanD\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\BhushanD\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",

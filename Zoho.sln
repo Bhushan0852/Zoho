@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoho.Domain", "Zoho.Domain\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoho.Data", "Zoho.Data\Zoho.Data.csproj", "{F2BE66AA-7ADC-482F-94AB-A42D0BAE3A8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoho.Interface", "Zoho.IRepository\Zoho.Interface.csproj", "{F280C605-EEC6-4DDB-86FA-EE6A693C5763}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoho.Interface", "Zoho.IRepository\Zoho.Interface.csproj", "{F280C605-EEC6-4DDB-86FA-EE6A693C5763}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoho.Repository", "Zoho.Repository\Zoho.Repository.csproj", "{D6584FAF-EB68-4F71-A4E8-5468EFB7E4AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoho.Repository", "Zoho.Repository\Zoho.Repository.csproj", "{D6584FAF-EB68-4F71-A4E8-5468EFB7E4AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoho.DTOs", "Zoho.DTOs\Zoho.DTOs.csproj", "{4910BAA9-1584-480F-BB4A-3C023D1A2486}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoho.DTOs", "Zoho.DTOs\Zoho.DTOs.csproj", "{4910BAA9-1584-480F-BB4A-3C023D1A2486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoho.AutoMapper", "Zoho.AutoMapper\Zoho.AutoMapper.csproj", "{2EC82CC0-7DAF-43DA-ADBD-DBF41F656EA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{4910BAA9-1584-480F-BB4A-3C023D1A2486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4910BAA9-1584-480F-BB4A-3C023D1A2486}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4910BAA9-1584-480F-BB4A-3C023D1A2486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC82CC0-7DAF-43DA-ADBD-DBF41F656EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC82CC0-7DAF-43DA-ADBD-DBF41F656EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC82CC0-7DAF-43DA-ADBD-DBF41F656EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC82CC0-7DAF-43DA-ADBD-DBF41F656EA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,22 +14,18 @@ namespace Zoho.Repository
         {
             this.dbContext = dbContext;
         }
-        public async Task<List<CurrencyDto>> GetAllAsync()
+        public async Task<List<Currency>> GetAllAsync()
         {
-           var data =  await dbContext.Currencies.Select(c => new CurrencyDto()
-           {
-               Id = c.Id,
-               Code = c.Code,
-               Country = c.Country
-           }).ToListAsync();
+            var data = await dbContext.Currencies.ToListAsync();
+           //     .Select(c => new CurrencyDto()
+           //{
+           //    Id = c.Id,
+           //    Code = c.Code,
+           //    Country = c.Country
+           //}).ToListAsync();
 
             return data;
-            //return data.Select(c => new
-            //{
-            //    Id = c.Id,
-            //    Code = c.Code,
-            //    Country = c.Country
-            //}).ToList();
+            
         }
     }
 }

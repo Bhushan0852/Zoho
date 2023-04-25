@@ -32,6 +32,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.AutoMapper\\Zoho.AutoMapper.csproj": {
+                "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.AutoMapper\\Zoho.AutoMapper.csproj"
+              },
               "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Data\\Zoho.Data.csproj": {
                 "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Data\\Zoho.Data.csproj"
               },
@@ -54,6 +57,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -83,6 +90,77 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.AutoMapper\\Zoho.AutoMapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.AutoMapper\\Zoho.AutoMapper.csproj",
+        "projectName": "Zoho.AutoMapper",
+        "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.AutoMapper\\Zoho.AutoMapper.csproj",
+        "packagesPath": "C:\\Users\\BhushanD\\.nuget\\packages\\",
+        "outputPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.AutoMapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\BhushanD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://patrickrealinsights.pkgs.visualstudio.com/Realm_V1/_packaging/Realm/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Domain\\Zoho.Domain.csproj": {
+                "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Domain\\Zoho.Domain.csproj"
+              },
+              "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.DTOs\\Zoho.DTOs.csproj": {
+                "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.DTOs\\Zoho.DTOs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

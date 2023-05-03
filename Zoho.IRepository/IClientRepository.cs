@@ -10,6 +10,8 @@ namespace Zoho.Interface
 {
     public interface IClientRepository
     {
-        Task<List<Currency>> GetAllAsync();
+        Task<List<Currency>> GetAllCurrencyAsync();
+        Task<List<BillingMethod>> GetAllBillingMethodAsync();
+        Task<List<Client>> GetAllClientAsync();
     }
 }

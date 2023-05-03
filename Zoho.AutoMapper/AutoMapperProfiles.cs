@@ -9,6 +9,8 @@ namespace Zoho.AutoMapper
         public AutoMapperProfiles()
         {
             CreateMap<Currency, CurrencyDto>().ReverseMap();
+            CreateMap<BillingMethod, BillingMethodDto>().ReverseMap();
+            CreateMap<Client, ClientDto>().ReverseMap();
         }
     }
 }

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zoho.Domain
+namespace Zoho.DTOs
 {
-    public class BillingMethod : Entity
+    public class BillingMethodDto
     {
         public int Id { get; set; }
         public string MethodType { get; set; }
+
     }
 }

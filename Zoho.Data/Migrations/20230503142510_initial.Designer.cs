@@ -12,8 +12,8 @@ using Zoho.Data;
 namespace Zoho.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230425190046_seeding_data_for_billingmethod_table")]
-    partial class seeding_data_for_billingmethod_table
+    [Migration("20230503142510_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -81,6 +81,72 @@ namespace Zoho.Data.Migrations
                             IsDeleted = false,
                             MethodType = "Hourly User Rate - Projects"
                         });
+                });
+
+            modelBuilder.Entity("Zoho.Domain.Client", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BillingMethodId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ClientName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedTimestamp")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CurrencyId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EmailId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FaxNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MobileNuber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedTimestamp")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BillingMethodId");
+
+                    b.HasIndex("CurrencyId");
+
+                    b.ToTable("Clients");
                 });
 
             modelBuilder.Entity("Zoho.Domain.Currency", b =>
@@ -154,6 +220,35 @@ namespace Zoho.Data.Migrations
                             Country = "Australia",
                             IsDeleted = false
                         });
+                });
+
+            modelBuilder.Entity("Zoho.Domain.Client", b =>
+                {
+                    b.HasOne("Zoho.Domain.BillingMethod", "BillingMethod")
+                        .WithMany("Clients")
+                        .HasForeignKey("BillingMethodId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Zoho.Domain.Currency", "Currency")
+                        .WithMany("Clients")
+                        .HasForeignKey("CurrencyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BillingMethod");
+
+                    b.Navigation("Currency");
+                });
+
+            modelBuilder.Entity("Zoho.Domain.BillingMethod", b =>
+                {
+                    b.Navigation("Clients");
+                });
+
+            modelBuilder.Entity("Zoho.Domain.Currency", b =>
+                {
+                    b.Navigation("Clients");
                 });
 #pragma warning restore 612, 618
         }

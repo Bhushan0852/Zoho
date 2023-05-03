@@ -12,6 +12,7 @@ namespace Zoho.Data
 
         public DbSet<Currency> Currencies{ get; set; }
         public DbSet<BillingMethod> BillingMethods{ get; set; }
+        public DbSet<Client> Clients{ get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

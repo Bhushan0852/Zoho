@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pK4FSZgwEQDQ6lXRiGlKo7e6wARh7KW1VBUBUlx+TCkSkcZEzn++ILP2OhGQ12Zwb7v2Q68NbJi2RlgoWvXNbA==",
+  "dgSpecHash": "vIapBrpkx2mK41eQMCBW+MD/XvdzH0tGOR1zL8VhKhjOcH9FTTL1ecIupDlIn8Am9u3GAA67xy8QJ1Fdhul6mQ==",
   "success": true,
   "projectFilePath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.API\\Zoho.API.csproj",
   "expectedPackageFiles": [
@@ -19,7 +19,6 @@
     "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.5\\microsoft.entityframeworkcore.design.7.0.5.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.5\\microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.5\\microsoft.entityframeworkcore.sqlserver.7.0.5.nupkg.sha512",
-    "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.5\\microsoft.entityframeworkcore.tools.7.0.5.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\BhushanD\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",

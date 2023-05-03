@@ -6,5 +6,6 @@
         public string Code { get; set; }
         public string Country { get; set; }
 
+        public IEnumerable<Client> Clients{ get; set; }
     }
 }

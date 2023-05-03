@@ -6,7 +6,7 @@ using Zoho.Interface;
 
 namespace Zoho.API.Controllers
 {
-    [Route("zoho/api/[controller]")]
+    [Route("zoho/api/client")]
     [ApiController]
     public class ClientController : ControllerBase
     {
@@ -19,11 +19,27 @@ namespace Zoho.API.Controllers
             this.mapper = mapper;
         }
 
-        [HttpGet("get_all_currency")]
-        public async Task<IActionResult> GetAllAsync()
+        [HttpGet("getcurrencyddl")]
+        public async Task<IActionResult> GetCurrencyAsync()
         {
-            var data = await clientRepository.GetAllAsync();
+            var data = await clientRepository.GetAllCurrencyAsync();
             var result = mapper.Map<List<CurrencyDto>>(data);
+            return Ok(result);
+        }
+
+        [HttpGet("getbillingmethoddl")]
+        public async Task<IActionResult> GetBillingMethodAsync()
+        {
+            var data = await clientRepository.GetAllBillingMethodAsync();
+            var result = mapper.Map<List<BillingMethodDto>>(data);
+            return Ok(result);
+        }
+
+        [HttpGet("getclient")]
+        public async Task<IActionResult> GetClientAsync()
+        {
+            var data = await clientRepository.GetAllClientAsync();
+            var result = mapper.Map<List<ClientDto>>(data);
             return Ok(result);
         }
     }

@@ -26,12 +26,10 @@ D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\Zoho.API.genruntimeconfig.c
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\obj\Debug\net6.0\ref\Zoho.API.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Azure.Core.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Azure.Identity.dll
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Humanizer.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
@@ -39,7 +37,6 @@ D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Extensions.Cachin
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
@@ -54,8 +51,6 @@ D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.IdentityModel.Pro
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Mono.TextTemplating.dll
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.CodeDom.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Drawing.Common.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
@@ -63,8 +58,6 @@ D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Memory.Data.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Runtime.Caching.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Security.Permissions.dll
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Text.Json.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Windows.Extensions.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -77,7 +70,6 @@ D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreap
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Data.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.Domain.dll
@@ -94,3 +86,11 @@ D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\AutoMapper.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.AutoMapper.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Zoho.AutoMapper.pdb
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Humanizer.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.CodeDom.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\System.Text.Json.dll
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

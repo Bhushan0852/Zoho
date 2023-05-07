@@ -13,5 +13,9 @@ namespace Zoho.Interface
         Task<List<Currency>> GetAllCurrencyAsync();
         Task<List<BillingMethod>> GetAllBillingMethodAsync();
         Task<List<Client>> GetAllClientAsync();
+        Task<Client> GetClientByIdAsync(int ClientId);
+        Task<bool> CreateClientAsync(CreateClientDto requestClient);
+        Task<Client> UpdateClientAsync(RequestClientDto requestClient);
+        Task<bool> RemoveClientAsync(int ClientId);
     }
 }

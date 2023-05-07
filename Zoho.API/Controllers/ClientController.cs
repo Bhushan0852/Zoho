@@ -40,7 +40,57 @@ namespace Zoho.API.Controllers
         {
             var data = await clientRepository.GetAllClientAsync();
             var result = mapper.Map<List<ClientDto>>(data);
+            if(result != null)
+            {
+                foreach (var item in result)
+                {
+                    item.CurrencyCode = item.Currency.Code;
+                    item.BillingMethodType = item.BillingMethod.MethodType;
+                }
+                return Ok(result);
+            }
+
+            return BadRequest("Not Found");
+        }
+
+        [HttpPost("getclientbyid")]
+        public async Task<IActionResult> GetClientByIdAsync(int ClientId)
+        {
+            var data = await clientRepository.GetClientByIdAsync(ClientId);
+            var result = mapper.Map<ClientDto>(data);
             return Ok(result);
+        }
+
+        [HttpPut("updateclientbyid")]
+        public async Task<IActionResult> UpdateClientByIdAsync(RequestClientDto requestClient)
+        {
+            var data = await clientRepository.UpdateClientAsync(requestClient);
+            var result = mapper.Map<ClientDto>(data);
+            return Ok(result);
+        }
+
+        [HttpPost("addclient")]
+        public async Task<IActionResult> AddClientAsync(CreateClientDto createClient)
+        {
+            var data = await clientRepository.CreateClientAsync(createClient);
+            //var result = mapper.Map<ClientDto>(data);
+            if(!data)
+            {
+                return BadRequest("Please check log");
+            }
+            return Ok("Record insert successfully");
+        }
+
+        [HttpDelete("removeclient")]
+        public async Task<IActionResult> RemoveClientAsync(int ClientId)
+        {
+            var data = await clientRepository.RemoveClientAsync(ClientId);
+            //var result = mapper.Map<ClientDto>(data);
+            if (!data)
+            {
+                return BadRequest("Please check log");
+            }
+            return Ok("Record insert successfully");
         }
     }
 }

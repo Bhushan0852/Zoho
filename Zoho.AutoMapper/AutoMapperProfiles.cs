@@ -11,6 +11,7 @@ namespace Zoho.AutoMapper
             CreateMap<Currency, CurrencyDto>().ReverseMap();
             CreateMap<BillingMethod, BillingMethodDto>().ReverseMap();
             CreateMap<Client, ClientDto>().ReverseMap();
+            CreateMap<Client, ClientDetailDto>().ReverseMap();
         }
     }
 }

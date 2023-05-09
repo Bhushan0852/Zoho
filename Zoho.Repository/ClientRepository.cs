@@ -69,7 +69,7 @@ namespace Zoho.Repository
             client.MobileNuber = requestClient.MobileNuber;
             client.FaxNumber = requestClient.FaxNumber;
             client.CurrencyId = requestClient.CurrencyId;
-            client.BillingMethodId = requestClient.BillingMethodId;
+            client.BillingMethodId = requestClient.BillingMethodId != null ? requestClient.BillingMethodId : null;
 
 
             var data = dbContext.Clients.Update(client);
@@ -89,7 +89,7 @@ namespace Zoho.Repository
             client.MobileNuber = requestClient.MobileNuber;
             client.FaxNumber = requestClient.FaxNumber;
             client.CurrencyId = requestClient.CurrencyId;
-            client.BillingMethodId = requestClient.BillingMethodId;
+            client.BillingMethodId = requestClient.BillingMethodId != null ? requestClient.BillingMethodId : null;
             var data = await dbContext.Clients.AddAsync(client);
             await dbContext.SaveChangesAsync();
             return true;

@@ -61,7 +61,7 @@ namespace Zoho.API.Controllers
                     MobileNuber = item.MobileNuber,
                     FaxNumber = item.FaxNumber,
                     CurrencyCode = item.Currency.Code,
-                    BillingMethodType = item.BillingMethod.MethodType
+                    BillingMethodType = item.BillingMethodId != null ? item.BillingMethod.MethodType : ""
                 };
                 clientDto.Currency = new CurrencyLabelDto()
                 {
@@ -71,8 +71,8 @@ namespace Zoho.API.Controllers
 
                 clientDto.BillingMethod = new BillingMethodlabelDto()
                 {
-                    Id = item.BillingMethod.Id,
-                    Label = item.BillingMethod.MethodType
+                    Id = item.BillingMethod != null ? item.BillingMethod.Id : null,
+                    Label = item.BillingMethod != null ? item.BillingMethod.MethodType : ""
                 };
 
                 result.Add(clientDto);

@@ -16,7 +16,7 @@ namespace Zoho.DTOs
         public string BillingMethodType { get; set; }
 
         public CurrencyLabelDto Currency { get; set; }   
-        public BillingMethodlabelDto BillingMethod { get; set; }
+        public BillingMethodlabelDto? BillingMethod { get; set; }
     }
 
     public class RequestClientDto
@@ -31,14 +31,16 @@ namespace Zoho.DTOs
         public string PhoneNumber { get; set; }
         public string MobileNuber { get; set; }
         public string FaxNumber { get; set; }
+
         [Required]
         public int CurrencyId { get; set; }
-        [Required]
-        public int BillingMethodId { get; set; }
+        
+        public int? BillingMethodId { get; set; }
     }
 
     public class CreateClientDto
     {
+        [Required]
         public string ClientName { get; set; }
         public string EmailId { get; set; }
         public string FirstName { get; set; }
@@ -49,9 +51,7 @@ namespace Zoho.DTOs
 
         [Required]
         public int CurrencyId { get; set; }
-
-        [Required]
-        public int BillingMethodId { get; set; }
+        public int? BillingMethodId { get; set; }
     }
 
     public class CurrencyLabelDto
@@ -63,7 +63,7 @@ namespace Zoho.DTOs
     }
     public class BillingMethodlabelDto
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         //public string MethodType { get; set; }
         public string Label { get; set; }
     }

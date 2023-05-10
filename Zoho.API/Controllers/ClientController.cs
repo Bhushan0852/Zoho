@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 using Zoho.DTOs;
 using Zoho.Interface;
 
@@ -24,9 +25,16 @@ namespace Zoho.API.Controllers
         [HttpGet("getcurrencyddl")]
         public async Task<IActionResult> GetCurrencyAsync()
         {
-            var data = await clientRepository.GetAllCurrencyAsync();
-            var result = mapper.Map<List<CurrencyDto>>(data);
-            return Ok(result);
+            if (ModelState.IsValid)
+            {
+                var data = await clientRepository.GetAllCurrencyAsync();
+                var result = mapper.Map<List<CurrencyDto>>(data);
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -34,9 +42,16 @@ namespace Zoho.API.Controllers
         [HttpGet("getbillingmethoddl")]
         public async Task<IActionResult> GetBillingMethodAsync()
         {
-            var data = await clientRepository.GetAllBillingMethodAsync();
-            var result = mapper.Map<List<BillingMethodDto>>(data);
-            return Ok(result);
+            if (ModelState.IsValid)
+            {
+                var data = await clientRepository.GetAllBillingMethodAsync();
+                var result = mapper.Map<List<BillingMethodDto>>(data);
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -44,74 +59,88 @@ namespace Zoho.API.Controllers
         [HttpGet("getclient")]
         public async Task<IActionResult> GetClientAsync()
         {
-            var data = await clientRepository.GetAllClientAsync();
-
-            List<ClientDto> result = new List<ClientDto>();
-            
-            foreach (var item in data)
+            if (ModelState.IsValid)
             {
-                ClientDto clientDto = new ClientDto()
-                {
-                    Id = item.Id,
-                    ClientName = item.ClientName,
-                    EmailId = item.EmailId,
-                    FirstName = item.FirstName,
-                    LastName = item.LastName,
-                    PhoneNumber = item.PhoneNumber,
-                    MobileNuber = item.MobileNuber,
-                    FaxNumber = item.FaxNumber,
-                    CurrencyCode = item.Currency.Code,
-                    BillingMethodType = item.BillingMethodId != null ? item.BillingMethod.MethodType : ""
-                };
-                clientDto.Currency = new CurrencyLabelDto()
-                {
-                    Id = item.Currency.Id,
-                    Label = item.Currency.Code
-                };
+                var data = await clientRepository.GetAllClientAsync();
 
-                clientDto.BillingMethod = new BillingMethodlabelDto()
+                List<ClientDto> result = new List<ClientDto>();
+
+                foreach (var item in data)
                 {
-                    Id = item.BillingMethod != null ? item.BillingMethod.Id : null,
-                    Label = item.BillingMethod != null ? item.BillingMethod.MethodType : ""
-                };
+                    ClientDto clientDto = new ClientDto()
+                    {
+                        Id = item.Id,
+                        ClientName = item.ClientName,
+                        EmailId = item.EmailId,
+                        FirstName = item.FirstName,
+                        LastName = item.LastName,
+                        PhoneNumber = item.PhoneNumber,
+                        MobileNuber = item.MobileNuber,
+                        FaxNumber = item.FaxNumber,
+                        CurrencyCode = item.Currency.Code,
+                        BillingMethodType = item.BillingMethodId != null ? item.BillingMethod.MethodType : ""
+                    };
+                    clientDto.Currency = new CurrencyLabelDto()
+                    {
+                        Id = item.Currency.Id,
+                        Label = item.Currency.Code
+                    };
 
-                result.Add(clientDto);
+                    clientDto.BillingMethod = new BillingMethodlabelDto()
+                    {
+                        Id = item.BillingMethod != null ? item.BillingMethod.Id : null,
+                        Label = item.BillingMethod != null ? item.BillingMethod.MethodType : ""
+                    };
 
+                    result.Add(clientDto);
+
+                }
+
+                //if(result == null)
+                //{
+                //    return BadRequest();
+                //}
+                //var result = mapper.Map<List<ClientDto>>(data);
+                //if(result != null)
+                //{
+                //    foreach (var item in result)
+                //    {
+                //        item.CurrencyCode = item.Currency.Code;
+                //        item.BillingMethodType = item.BillingMethod.MethodType;
+                //    }
+                //    return Ok(result);
+                //}
+
+                return Ok(result);
             }
-
-            if(result == null)
+            else
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
-            //var result = mapper.Map<List<ClientDto>>(data);
-            //if(result != null)
-            //{
-            //    foreach (var item in result)
-            //    {
-            //        item.CurrencyCode = item.Currency.Code;
-            //        item.BillingMethodType = item.BillingMethod.MethodType;
-            //    }
-            //    return Ok(result);
-            //}
-
-            return Ok(result);
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPost("getclientbyid")]
-        public async Task<IActionResult> GetClientByIdAsync(int ClientId)
+        public async Task<IActionResult> GetClientByIdAsync([Required] int ClientId)
         {
-            var data = await clientRepository.GetClientByIdAsync(ClientId);
-   
-            var result = mapper.Map<ClientDetailDto>(data);
-
-            if (result == null)
+            if (ModelState.IsValid)
             {
-                return BadRequest();
-            }
+                var data = await clientRepository.GetClientByIdAsync(ClientId);
 
-            return Ok(result);
+                var result = mapper.Map<ClientDetailDto>(data);
+
+                //if (result == null)
+                //{
+                //    return BadRequest();
+                //}
+
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -119,15 +148,22 @@ namespace Zoho.API.Controllers
         [HttpPut("updateclientbyid")]
         public async Task<IActionResult> UpdateClientByIdAsync(RequestClientDto requestClient)
         {
-            var data = await clientRepository.UpdateClientAsync(requestClient);
-            var result = mapper.Map<ClientDto>(data);
-
-            if (result == null)
+            if (ModelState.IsValid)
             {
-                return BadRequest();
-            }
+                var data = await clientRepository.UpdateClientAsync(requestClient);
+                var result = mapper.Map<ClientDto>(data);
 
-            return Ok(result);
+                //if (result == null)
+                //{
+                //    return BadRequest();
+                //}
+
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -135,13 +171,20 @@ namespace Zoho.API.Controllers
         [HttpPost("addclient")]
         public async Task<IActionResult> AddClientAsync(CreateClientDto createClient)
         {
-            var data = await clientRepository.CreateClientAsync(createClient);
-            //var result = mapper.Map<ClientDto>(data);
-            if(!data)
+            if (ModelState.IsValid)
             {
-                return BadRequest("ClientName Already Exist");
+                var data = await clientRepository.CreateClientAsync(createClient);
+                //var result = mapper.Map<ClientDto>(data);
+                //if(!data)
+                //{
+                //    return BadRequest("ClientName Already Exist");
+                //}
+                return Ok();
             }
-            return Ok();
+            else
+            {
+                return BadRequest(ModelState);
+            }
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -149,13 +192,20 @@ namespace Zoho.API.Controllers
         [HttpDelete("removeclient")]
         public async Task<IActionResult> RemoveClientAsync(int ClientId)
         {
-            var data = await clientRepository.RemoveClientAsync(ClientId);
-            //var result = mapper.Map<ClientDto>(data);
-            if (!data)
+            if (ModelState.IsValid)
             {
-                return BadRequest();
+                var data = await clientRepository.RemoveClientAsync(ClientId);
+                //var result = mapper.Map<ClientDto>(data);
+                //if (!data)
+                //{
+                //    return BadRequest();
+                //}
+                return Ok();
             }
-            return Ok();
+            else
+            {
+                return BadRequest(ModelState);
+            }
         }
     }
 }

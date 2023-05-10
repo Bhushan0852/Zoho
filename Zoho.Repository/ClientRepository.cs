@@ -80,19 +80,24 @@ namespace Zoho.Repository
 
         public async Task<bool> CreateClientAsync(CreateClientDto requestClient)
         {
-            Client client = new Client();
-            client.ClientName = requestClient.ClientName;
-            client.EmailId = requestClient.EmailId;
-            client.FirstName = requestClient.FirstName;
-            client.LastName = requestClient.LastName;
-            client.PhoneNumber = requestClient.PhoneNumber;
-            client.MobileNuber = requestClient.MobileNuber;
-            client.FaxNumber = requestClient.FaxNumber;
-            client.CurrencyId = requestClient.CurrencyId;
-            client.BillingMethodId = requestClient.BillingMethodId != null ? requestClient.BillingMethodId : null;
-            var data = await dbContext.Clients.AddAsync(client);
-            await dbContext.SaveChangesAsync();
-            return true;
+            var isAvailable = dbContext.Clients.Any(c => c.ClientName.ToLower() == requestClient.ClientName.ToLower());
+            if (!isAvailable)
+            {
+                //Client client = new Client();
+                //client.ClientName = requestClient.ClientName;
+                //client.EmailId = requestClient.EmailId;
+                //client.FirstName = requestClient.FirstName;
+                //client.LastName = requestClient.LastName;
+                //client.PhoneNumber = requestClient.PhoneNumber;
+                //client.MobileNuber = requestClient.MobileNuber;
+                //client.FaxNumber = requestClient.FaxNumber;
+                //client.CurrencyId = requestClient.CurrencyId;
+                //client.BillingMethodId = requestClient.BillingMethodId != null ? requestClient.BillingMethodId : null;
+                //var data = await dbContext.Clients.AddAsync(client);
+                //await dbContext.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
 
         public async Task<bool> RemoveClientAsync(int ClientId)

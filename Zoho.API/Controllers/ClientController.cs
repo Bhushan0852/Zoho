@@ -139,7 +139,7 @@ namespace Zoho.API.Controllers
             //var result = mapper.Map<ClientDto>(data);
             if(!data)
             {
-                return BadRequest();
+                return BadRequest("ClientName Already Exist");
             }
             return Ok();
         }

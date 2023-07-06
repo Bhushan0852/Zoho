@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoho.DTOs", "Zoho.DTOs\Zoho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoho.AutoMapper", "Zoho.AutoMapper\Zoho.AutoMapper.csproj", "{2EC82CC0-7DAF-43DA-ADBD-DBF41F656EA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoho.Comman", "Zoho.Comman\Zoho.Comman.csproj", "{4B711CDC-D576-4DD9-AB4C-8563CFA18F43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoho.Comman", "Zoho.Comman\Zoho.Comman.csproj", "{4B711CDC-D576-4DD9-AB4C-8563CFA18F43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoho.Validation", "Zoho.Validation\Zoho.Validation.csproj", "{782C5444-7738-463A-B135-3C3E1639E0AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoho.Validation", "Zoho.Validation\Zoho.Validation.csproj", "{782C5444-7738-463A-B135-3C3E1639E0AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoho.Dapper", "Zoho.Dapper\Zoho.Dapper.csproj", "{D9A96FD9-3F70-42D5-9633-1636D0C7E0BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{782C5444-7738-463A-B135-3C3E1639E0AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{782C5444-7738-463A-B135-3C3E1639E0AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{782C5444-7738-463A-B135-3C3E1639E0AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A96FD9-3F70-42D5-9633-1636D0C7E0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A96FD9-3F70-42D5-9633-1636D0C7E0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A96FD9-3F70-42D5-9633-1636D0C7E0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A96FD9-3F70-42D5-9633-1636D0C7E0BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ClientDapperRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Zoho.Data\Zoho.Data.csproj" />
     <ProjectReference Include="..\Zoho.DTOs\Zoho.DTOs.csproj" />
     <ProjectReference Include="..\Zoho.IRepository\Zoho.Interface.csproj" />

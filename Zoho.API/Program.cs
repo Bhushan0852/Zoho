@@ -6,6 +6,17 @@ using Zoho.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var allowSpecificOrigins = "_myAllowSpecificOrigins";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: allowSpecificOrigins,
+                      builder =>
+                      {
+                          builder.WithOrigins("*");
+                          builder.AllowAnyHeader();
+                          builder.AllowAnyMethod();
+                      });
+});
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -32,6 +43,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+//app.UseCors("NUXT");
+app.UseCors(allowSpecificOrigins);
 
 app.UseAuthorization();
 

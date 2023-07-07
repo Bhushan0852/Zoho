@@ -21,22 +21,22 @@ namespace Zoho.DTOs
 
     public class RequestClientDto
     {
-        [Required]
+        //[Required]
         public int Id { get; set; }
-        [Required]
+        //[Required]
         public string ClientName { get; set; }
         public string EmailId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        [RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Phone Number.")]
+        //[RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Phone Number.")]
         public string PhoneNumber { get; set; }
-        [RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Mobile Number.")]
+        //[RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Mobile Number.")]
         public string MobileNuber { get; set; }
-        [RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Fax Number.")]
+        //[RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Fax Number.")]
         public string FaxNumber { get; set; }
 
-        [Required]
+        //[Required]
         public int CurrencyId { get; set; }
         
         public int? BillingMethodId { get; set; }
@@ -44,19 +44,19 @@ namespace Zoho.DTOs
 
     public class CreateClientDto
     {
-        [Required]
+        //[Required]
         public string ClientName { get; set; }
         public string EmailId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        [RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Phone Number.")]
+        //[RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Phone Number.")]
         public string PhoneNumber { get; set; }
-        [RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Mobile Number.")]
+        //[RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Mobile Number.")]
         public string MobileNuber { get; set; }
-        [RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Fax Number.")]
+        //[RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Fax Number.")]
         public string FaxNumber { get; set; }
 
-        [Required]
+        //[Required]
         public int CurrencyId { get; set; }
         public int? BillingMethodId { get; set; }
     }

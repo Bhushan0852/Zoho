@@ -4,6 +4,83 @@
     "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Repository\\Zoho.Repository.csproj": {}
   },
   "projects": {
+    "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Dapper\\Zoho.Dapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Dapper\\Zoho.Dapper.csproj",
+        "projectName": "Zoho.Dapper",
+        "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Dapper\\Zoho.Dapper.csproj",
+        "packagesPath": "C:\\Users\\BhushanD\\.nuget\\packages\\",
+        "outputPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Dapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\BhushanD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://patrickrealinsights.pkgs.visualstudio.com/Realm_V1/_packaging/Realm/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Domain\\Zoho.Domain.csproj": {
+                "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Domain\\Zoho.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.411\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Data\\Zoho.Data.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,6 +109,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Dapper\\Zoho.Dapper.csproj": {
+                "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Dapper\\Zoho.Dapper.csproj"
+              },
               "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Domain\\Zoho.Domain.csproj": {
                 "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Domain\\Zoho.Domain.csproj"
               }
@@ -187,6 +267,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

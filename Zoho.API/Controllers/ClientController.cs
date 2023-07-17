@@ -7,8 +7,8 @@ using Zoho.Interface;
 
 namespace Zoho.API.Controllers
 {
-    [Route("zoho/api/client")]
-    [ApiController]
+    //[Route("zoho/api/client")]
+    //[ApiController]
     public class ClientController : ControllerBase
     {
         private readonly IClientRepository clientRepository;

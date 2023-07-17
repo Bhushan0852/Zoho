@@ -8,7 +8,7 @@ namespace Zoho.Domain
 {
     public class Entity
     {
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; set; } = false;
         public DateTime? CreatedTimestamp { get; set; }
         public string? CreatedBy { get; set; }
         public DateTime? UpdatedTimestamp { get; set; }

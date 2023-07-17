@@ -12,8 +12,8 @@ using Zoho.Data;
 namespace Zoho.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230503142510_initial")]
-    partial class initial
+    [Migration("20230717173754_add_new_table_userroles")]
+    partial class add_new_table_userroles
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -91,7 +91,7 @@ namespace Zoho.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BillingMethodId")
+                    b.Property<int?>("BillingMethodId")
                         .HasColumnType("int");
 
                     b.Property<string>("ClientName")
@@ -222,13 +222,112 @@ namespace Zoho.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Zoho.Domain.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedTimestamp")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("RoleCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedTimestamp")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsDeleted = false,
+                            RoleCode = "Admin",
+                            RoleName = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            IsDeleted = false,
+                            RoleCode = "ProjectHead",
+                            RoleName = "Project Head"
+                        });
+                });
+
+            modelBuilder.Entity("Zoho.Domain.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedTimestamp")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedTimestamp")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("Zoho.Domain.Client", b =>
                 {
                     b.HasOne("Zoho.Domain.BillingMethod", "BillingMethod")
                         .WithMany("Clients")
-                        .HasForeignKey("BillingMethodId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("BillingMethodId");
 
                     b.HasOne("Zoho.Domain.Currency", "Currency")
                         .WithMany("Clients")
@@ -241,6 +340,13 @@ namespace Zoho.Data.Migrations
                     b.Navigation("Currency");
                 });
 
+            modelBuilder.Entity("Zoho.Domain.User", b =>
+                {
+                    b.HasOne("Zoho.Domain.Role", null)
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId");
+                });
+
             modelBuilder.Entity("Zoho.Domain.BillingMethod", b =>
                 {
                     b.Navigation("Clients");
@@ -249,6 +355,11 @@ namespace Zoho.Data.Migrations
             modelBuilder.Entity("Zoho.Domain.Currency", b =>
                 {
                     b.Navigation("Clients");
+                });
+
+            modelBuilder.Entity("Zoho.Domain.Role", b =>
+                {
+                    b.Navigation("Users");
                 });
 #pragma warning restore 612, 618
         }

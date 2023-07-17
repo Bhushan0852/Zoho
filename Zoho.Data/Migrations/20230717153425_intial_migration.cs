@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Zoho.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class intial_migration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -51,6 +51,26 @@ namespace Zoho.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Roles",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    RoleName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RoleCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsAuthorize = table.Column<bool>(type: "bit", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedTimestamp = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UpdatedTimestamp = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    UpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Roles", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Clients",
                 columns: table => new
                 {
@@ -64,7 +84,7 @@ namespace Zoho.Data.Migrations
                     MobileNuber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FaxNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CurrencyId = table.Column<int>(type: "int", nullable: false),
-                    BillingMethodId = table.Column<int>(type: "int", nullable: false),
+                    BillingMethodId = table.Column<int>(type: "int", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CreatedTimestamp = table.Column<DateTime>(type: "datetime2", nullable: true),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -78,8 +98,7 @@ namespace Zoho.Data.Migrations
                         name: "FK_Clients_BillingMethods_BillingMethodId",
                         column: x => x.BillingMethodId,
                         principalTable: "BillingMethods",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Clients_Currencies_CurrencyId",
                         column: x => x.CurrencyId,
@@ -111,6 +130,15 @@ namespace Zoho.Data.Migrations
                     { 5, "AUD", "Australia", null, null, false, null, null }
                 });
 
+            migrationBuilder.InsertData(
+                table: "Roles",
+                columns: new[] { "Id", "CreatedBy", "CreatedTimestamp", "IsAuthorize", "IsDeleted", "RoleCode", "RoleName", "UpdatedBy", "UpdatedTimestamp" },
+                values: new object[,]
+                {
+                    { 1, null, null, true, false, "Admin", "Admin", null, null },
+                    { 2, null, null, false, false, "ProjectHead", "Project Head", null, null }
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Clients_BillingMethodId",
                 table: "Clients",
@@ -127,6 +155,9 @@ namespace Zoho.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Clients");
+
+            migrationBuilder.DropTable(
+                name: "Roles");
 
             migrationBuilder.DropTable(
                 name: "BillingMethods");

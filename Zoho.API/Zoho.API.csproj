@@ -4,23 +4,85 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Configurations>Debug;Release;Development;Production</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\ClientController.cs" />
+    <Compile Remove="Controllers\EF\ClientController.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\Development.pubxml" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\Production.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.6.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.20" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.32.0" />
+    <PackageReference Include="Serilog" Version="3.0.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.32.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\UnitOfWorkDemo.Infrastructure\UnitOfWorkDemo.Infrastructure.csproj" />
+    <ProjectReference Include="..\UnitOfWorkDemo.Services\UnitOfWorkDemo.Services.csproj" />
     <ProjectReference Include="..\Zoho.AutoMapper\Zoho.AutoMapper.csproj" />
     <ProjectReference Include="..\Zoho.Data\Zoho.Data.csproj" />
     <ProjectReference Include="..\Zoho.IRepository\Zoho.Interface.csproj" />
     <ProjectReference Include="..\Zoho.Repository\Zoho.Repository.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\EF\" />
+    <Folder Include="Logs\" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties properties_4launchsettings_1json__JsonSchema="https://json.schemastore.org/lgtm.json" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Choose>
+    <When Condition="'$(Configuration)' == 'Development'">
+      <ItemGroup>
+        <None Include="appsettings.Development.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+        <None Include="appsettings.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="PreserveNewest" />
+        <Content Remove="appsettings.*.json;appsettings.json" />
+      </ItemGroup>
+    </When>
+    <When Condition="'$(Configuration)' == 'Production'">
+      <ItemGroup>
+        <None Include="appsettings.Production.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+        <None Include="appsettings.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="PreserveNewest" />
+        <Content Remove="appsettings.*.json;appsettings.json" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <None Include="appsettings.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="PreserveNewest" />
+        <Content Remove="appsettings.*.json;appsettings.json" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Content Include="appsettings.Development.json" />
+    <Content Include="appsettings.Production.json" />
+    <!--<Content Include="Reza.Api.http.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>-->
+  </ItemGroup>
 </Project>

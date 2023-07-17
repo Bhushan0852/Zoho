@@ -12,8 +12,8 @@ using Zoho.Data;
 namespace Zoho.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230509142213_Alter_Client_Column_BillingMethodId_As_Nullable")]
-    partial class Alter_Client_Column_BillingMethodId_As_Nullable
+    [Migration("20230717153425_intial_migration")]
+    partial class intial_migration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -219,6 +219,63 @@ namespace Zoho.Data.Migrations
                             Code = "AUD",
                             Country = "Australia",
                             IsDeleted = false
+                        });
+                });
+
+            modelBuilder.Entity("Zoho.Domain.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedTimestamp")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsAuthorize")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("RoleCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedTimestamp")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsAuthorize = true,
+                            IsDeleted = false,
+                            RoleCode = "Admin",
+                            RoleName = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            IsAuthorize = false,
+                            IsDeleted = false,
+                            RoleCode = "ProjectHead",
+                            RoleName = "Project Head"
                         });
                 });
 

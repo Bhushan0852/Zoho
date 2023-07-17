@@ -1,8 +1,11 @@
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\bin\Debug\net6.0\Zoho.Data.deps.json
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\bin\Debug\net6.0\Zoho.Data.runtimeconfig.json
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\bin\Debug\net6.0\Zoho.Data.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\bin\Debug\net6.0\Zoho.Data.pdb
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\bin\Debug\net6.0\Zoho.Dapper.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\bin\Debug\net6.0\Zoho.Domain.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\bin\Debug\net6.0\Zoho.Domain.pdb
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\bin\Debug\net6.0\Zoho.Dapper.pdb
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\obj\Debug\net6.0\Zoho.Data.csproj.AssemblyReference.cache
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\obj\Debug\net6.0\Zoho.Data.GeneratedMSBuildEditorConfig.editorconfig
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\obj\Debug\net6.0\Zoho.Data.AssemblyInfoInputs.cache
@@ -12,6 +15,5 @@ D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\obj\Debug\net6.0\Zoho.Data.csproj.CopyCompl
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\obj\Debug\net6.0\Zoho.Data.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\obj\Debug\net6.0\refint\Zoho.Data.dll
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\obj\Debug\net6.0\Zoho.Data.pdb
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\obj\Debug\net6.0\ref\Zoho.Data.dll
-D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\bin\Debug\net6.0\Zoho.Data.runtimeconfig.json
 D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\obj\Debug\net6.0\Zoho.Data.genruntimeconfig.cache
+D:\Bhushan Doble\ZOHO\Zoho\Zoho.Data\obj\Debug\net6.0\ref\Zoho.Data.dll

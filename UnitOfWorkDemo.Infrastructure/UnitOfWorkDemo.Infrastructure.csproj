@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;Development;Production</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DbContextClass.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.143" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UnitOfWorkDemo.Core1\UnitOfWorkDemo.Core.csproj" />
+    <ProjectReference Include="..\UnitOfWorkDemo.Services\UnitOfWorkDemo.Services.csproj" />
+    <ProjectReference Include="..\Zoho.Data\Zoho.Data.csproj" />
+    <ProjectReference Include="..\Zoho.Domain\Zoho.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

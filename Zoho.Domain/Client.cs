@@ -15,5 +15,6 @@
         public virtual Currency Currency { get; set; }
         public int? BillingMethodId { get; set; }
         public virtual BillingMethod? BillingMethod { get; set; }
+        
     }
 }

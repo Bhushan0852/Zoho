@@ -12,8 +12,11 @@ namespace Zoho.DTOs
         public string PhoneNumber { get; set; }
         public string MobileNuber { get; set; }
         public string FaxNumber { get; set; }
-        public string CurrencyCode { get; set; }
-        public string BillingMethodType { get; set; }
+        //public string CurrencyCode { get; set; }
+        //public string BillingMethodType { get; set; }
+        public int CurrencyId { get; set; }
+
+        public int? BillingMethodId { get; set; }
 
         public CurrencyLabelDto Currency { get; set; }   
         public BillingMethodlabelDto? BillingMethod { get; set; }
@@ -91,5 +94,28 @@ namespace Zoho.DTOs
 
         public CurrencyDto Currency { get; set; }
         public BillingMethodDto BillingMethod { get; set; }
+    }
+
+    public class UpdateClientDto
+    {
+        //[Required]
+        public int Id { get; set; }
+        //[Required]
+        public string ClientName { get; set; }
+        public string EmailId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+        //[RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Phone Number.")]
+        public string PhoneNumber { get; set; }
+        //[RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Mobile Number.")]
+        public string MobileNuber { get; set; }
+        //[RegularExpression("^([0-9]{10})$", ErrorMessage = "Invalid Fax Number.")]
+        public string FaxNumber { get; set; }
+
+        //[Required]
+        public int CurrencyId { get; set; }
+
+        public int? BillingMethodId { get; set; }
     }
 }

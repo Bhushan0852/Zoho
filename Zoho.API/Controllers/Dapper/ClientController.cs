@@ -52,8 +52,6 @@ namespace Zoho.API.Controllers.Dapper
                         FaxNumber = item.FaxNumber,
                         CurrencyId = item.CurrencyId,
                         BillingMethodId = item.BillingMethodId
-                        //CurrencyCode = item.Currency.Code,
-                        //BillingMethodType = item.BillingMethodId != null ? item.BillingMethod.MethodType : ""
                     };
                     var currencyDetail = await currencyRepository.GetById(clientDto.CurrencyId);
                     clientDto.Currency = new CurrencyLabelDto()
@@ -215,8 +213,6 @@ namespace Zoho.API.Controllers.Dapper
                 BillingMethodId = addClient.BillingMethodId,
                 IsDeleted = false
             };
-            
-
 
             var result = await clientRepository.Create(client);
 

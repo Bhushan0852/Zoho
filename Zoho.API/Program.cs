@@ -4,8 +4,8 @@ using UnitOfWorkDemo.Core.Interfaces;
 using UnitOfWorkDemo.Infrastructure.Repositories;
 using UnitOfWorkDemo.Infrastructure.ServiceExtension;
 using Zoho.AutoMapper;
-using Zoho.Dapper.Abstract;
-using Zoho.Dapper.Interfaces;
+//using Zoho.Dapper.Abstract;
+//using Zoho.Dapper.Interfaces;
 using Zoho.Data;
 using FluentValidation.AspNetCore;
 using System.Text;
@@ -16,11 +16,18 @@ using Zoho.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//var logger = new LoggerConfiguration().WriteTo.Console().WriteTo.File("D://MyProjectDirectory//development//zohobe//src//Zoho.Common//Zoho.V1.Application//Logs//Exception.txt", rollingInterval: RollingInterval.Minute).
+//                                    MinimumLevel.Warning().CreateLogger();
+//builder.Logging.ClearProviders();
+//builder.Logging.AddSerilog(logger);
+
 var logger = new LoggerConfiguration()
     .WriteTo.Console()
-    .WriteTo.File("Logs/Zoho_Log.txt",rollingInterval : RollingInterval.Minute)
+    .WriteTo.File("D://Bhushan Doble//ZOHO-Clone-Folder//Zoho//Zoho.API//Logs//Zoho_Log.txt", rollingInterval : RollingInterval.Minute)
     .MinimumLevel.Warning()
     .CreateLogger();
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
 
 var allowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddCors(options =>
@@ -75,7 +82,7 @@ builder.Services.AddDIServices(builder.Configuration);
 builder.Services.AddScoped<IClientRepository,UnitOfWorkDemo.Infrastructure.Repositories.ClientRepository>();
 builder.Services.AddScoped<ICurrencyRepository,CurrencyRepository>();
 builder.Services.AddScoped<IBillingMethodRepository, BillingMethodRepository>();
-builder.Services.AddScoped<IGenericRepository, GenericRepository>();
+//builder.Services.AddScoped<UnitOfWorkDemo.Core.Interfaces.IGenericRepository, UnitOfWorkDemo.Infrastructure.Repositories.GenericRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ITokenHandler, UnitOfWorkDemo.Infrastructure.Repositories.TokenHandler>();
 //builder.Services.AddScoped<IProductRepository, ProductRepository>();

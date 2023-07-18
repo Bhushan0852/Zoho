@@ -40,43 +40,42 @@ namespace Zoho.API.Controllers.Dapper
             return BadRequest("Username or Password is incorrect.");
         }
 
-        [HttpPost("create_user")]
-        [Authorize(Roles = "SuperAdmin")]
-        public async Task<IActionResult> CreateUser(CreateUserDTO userDetail)
-        {
-            string passwordHash = BCrypt.Net.BCrypt.HashPassword(userDetail.Password);
-            User user = new User()
-            {
-                Name = userDetail.Name,
-                Email = userDetail.Email,   
-                Password= passwordHash,
-                RoleName = userDetail.RoleName,
-                IsDeleted = false
-            };
+        //[HttpPost("create_user")]
+        //[Authorize(Roles = "SuperAdmin")]
+        //public async Task<IActionResult> CreateUser(CreateUserDTO userDetail)
+        //{
+        //    string passwordHash = BCrypt.Net.BCrypt.HashPassword(userDetail.Password);
+        //    User user = new User()
+        //    {
+        //        Name = userDetail.Name,
+        //        Email = userDetail.Email,   
+        //        Password= passwordHash,
+        //        RoleName = userDetail.RoleName,
+        //        IsDeleted = false
+        //    };
 
-            var result = await userRepository.Create(user);
+        //    var result = await userRepository.Create(user);
 
-            if (result)
-            {
-                return Ok();
-            }
-            else
-            {
-                return BadRequest();
-            }
-        }
+        //    if (result)
+        //    {
+        //        return Ok();
+        //    }
+        //    else
+        //    {
+        //        return BadRequest();
+        //    }
+        //}
 
-
-        [HttpGet("isvalid_user")]
-        [Authorize(Roles = "SuperAdmin")]
-        public async Task<IActionResult> GetUser(string userName, string password)
-        {
-            //string passwordHash = BCrypt.Net.BCrypt.HashPassword(password);
-            var result = await userRepository.GetUser(userName, password);
-            bool verified = BCrypt.Net.BCrypt.Verify(password , result.Password);
-            if (verified)
-                return Ok("valid user!!!");
-            return Ok("not valid user!!!");
-        }
+        
+        //[HttpGet("isvalid_user")]
+        //[Authorize(Roles = "SuperAdmin")]
+        //public async Task<IActionResult> GetUserDetail(string userName, string password)
+        //{
+        //    var result = await userRepository.GetUser(userName, password);
+        //    bool verified = BCrypt.Net.BCrypt.Verify(password , result.Password);
+        //    if (verified)
+        //        return Ok("valid user!!!");
+        //    return Ok("not valid user!!!");
+        //}
     }
 }

@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Zoho.Dapper\Zoho.Dapper.csproj" />
     <ProjectReference Include="..\Zoho.Domain\Zoho.Domain.csproj" />
   </ItemGroup>
 

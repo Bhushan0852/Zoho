@@ -13,7 +13,6 @@ namespace Zoho.Data
         public DbSet<Currency> Currencies{ get; set; }
         public DbSet<BillingMethod> BillingMethods{ get; set; }
         public DbSet<Client> Clients{ get; set; }
-        public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
 
 
@@ -58,7 +57,6 @@ namespace Zoho.Data
                     IsDeleted = false
                 },
             };
-
             var BillingMethods = new List<BillingMethod>()
             {
                 new BillingMethod()
@@ -87,27 +85,9 @@ namespace Zoho.Data
                 }
             };
 
-            var Roles = new List<Role>()
-            {
-                new Role()
-                {
-                    Id = 1,
-                    RoleName = "Admin",
-                    RoleCode = "Admin",
-                    IsDeleted = false
-                },
-                new Role()
-                {
-                    Id = 2,
-                    RoleName = "Project Head",
-                    RoleCode = "ProjectHead",
-                    IsDeleted = false
-                }
-            };
-
             modelBuilder.Entity<Currency>().HasData(Currencies);
             modelBuilder.Entity<BillingMethod>().HasData(BillingMethods);
-            modelBuilder.Entity<Role>().HasData(Roles);
+           
         }
 
     }

@@ -20,8 +20,8 @@ namespace UnitOfWorkDemo.Infrastructure.ServiceExtension
             {
                 options.UseSqlServer(configuration.GetConnectionString("ZohoConnectionString"));
             });
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IClientRepository, ClientRepository>();
+            //services.AddScoped<IUnitOfWork, UnitOfWork>();
+            //services.AddScoped<IClientRepository, ClientRepository>();
 
             return services;
         }

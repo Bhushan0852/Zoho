@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UnitOfWorkDemo.Core1\UnitOfWorkDemo.Core.csproj" />
-    <ProjectReference Include="..\UnitOfWorkDemo.Services\UnitOfWorkDemo.Services.csproj" />
     <ProjectReference Include="..\Zoho.Data\Zoho.Data.csproj" />
     <ProjectReference Include="..\Zoho.Domain\Zoho.Domain.csproj" />
   </ItemGroup>

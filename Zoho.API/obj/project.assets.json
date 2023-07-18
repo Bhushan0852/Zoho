@@ -1355,7 +1355,6 @@
           "Dapper": "2.0.143",
           "System.Data.SqlClient": "4.8.5",
           "UnitOfWorkDemo.Core": "1.0.0",
-          "UnitOfWorkDemo.Services": "1.0.0",
           "Zoho.Data": "1.0.0",
           "Zoho.Domain": "1.0.0"
         },
@@ -1364,20 +1363,6 @@
         },
         "runtime": {
           "bin/placeholder/UnitOfWorkDemo.Infrastructure.dll": {}
-        }
-      },
-      "UnitOfWorkDemo.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "UnitOfWorkDemo.Core": "1.0.0",
-          "Zoho.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/UnitOfWorkDemo.Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/UnitOfWorkDemo.Services.dll": {}
         }
       },
       "Zoho.AutoMapper/1.0.0": {
@@ -1395,29 +1380,12 @@
           "bin/placeholder/Zoho.AutoMapper.dll": {}
         }
       },
-      "Zoho.Dapper/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Dapper": "2.0.143",
-          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
-          "System.Data.SqlClient": "4.8.5",
-          "Zoho.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Zoho.Dapper.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Zoho.Dapper.dll": {}
-        }
-      },
       "Zoho.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
-          "Zoho.Dapper": "1.0.0",
           "Zoho.Domain": "1.0.0"
         },
         "compile": {
@@ -4730,20 +4698,10 @@
       "path": "../UnitOfWorkDemo.Infrastructure/UnitOfWorkDemo.Infrastructure.csproj",
       "msbuildProject": "../UnitOfWorkDemo.Infrastructure/UnitOfWorkDemo.Infrastructure.csproj"
     },
-    "UnitOfWorkDemo.Services/1.0.0": {
-      "type": "project",
-      "path": "../UnitOfWorkDemo.Services/UnitOfWorkDemo.Services.csproj",
-      "msbuildProject": "../UnitOfWorkDemo.Services/UnitOfWorkDemo.Services.csproj"
-    },
     "Zoho.AutoMapper/1.0.0": {
       "type": "project",
       "path": "../Zoho.AutoMapper/Zoho.AutoMapper.csproj",
       "msbuildProject": "../Zoho.AutoMapper/Zoho.AutoMapper.csproj"
-    },
-    "Zoho.Dapper/1.0.0": {
-      "type": "project",
-      "path": "../Zoho.Dapper/Zoho.Dapper.csproj",
-      "msbuildProject": "../Zoho.Dapper/Zoho.Dapper.csproj"
     },
     "Zoho.Data/1.0.0": {
       "type": "project",
@@ -4788,7 +4746,6 @@
       "Swashbuckle.AspNetCore >= 6.5.0",
       "System.IdentityModel.Tokens.Jwt >= 6.32.0",
       "UnitOfWorkDemo.Infrastructure >= 1.0.0",
-      "UnitOfWorkDemo.Services >= 1.0.0",
       "Zoho.AutoMapper >= 1.0.0",
       "Zoho.Data >= 1.0.0",
       "Zoho.Interface >= 1.0.0",
@@ -4802,11 +4759,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.API\\Zoho.API.csproj",
+      "projectUniqueName": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.API\\Zoho.API.csproj",
       "projectName": "Zoho.API",
-      "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.API\\Zoho.API.csproj",
+      "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.API\\Zoho.API.csproj",
       "packagesPath": "C:\\Users\\BhushanD\\.nuget\\packages\\",
-      "outputPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.API\\obj\\",
+      "outputPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4827,23 +4784,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Bhushan Doble\\ZOHO\\Zoho\\UnitOfWorkDemo.Infrastructure\\UnitOfWorkDemo.Infrastructure.csproj": {
-              "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\UnitOfWorkDemo.Infrastructure\\UnitOfWorkDemo.Infrastructure.csproj"
+            "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\UnitOfWorkDemo.Infrastructure\\UnitOfWorkDemo.Infrastructure.csproj": {
+              "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\UnitOfWorkDemo.Infrastructure\\UnitOfWorkDemo.Infrastructure.csproj"
             },
-            "D:\\Bhushan Doble\\ZOHO\\Zoho\\UnitOfWorkDemo.Services\\UnitOfWorkDemo.Services.csproj": {
-              "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\UnitOfWorkDemo.Services\\UnitOfWorkDemo.Services.csproj"
+            "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.AutoMapper\\Zoho.AutoMapper.csproj": {
+              "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.AutoMapper\\Zoho.AutoMapper.csproj"
             },
-            "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.AutoMapper\\Zoho.AutoMapper.csproj": {
-              "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.AutoMapper\\Zoho.AutoMapper.csproj"
+            "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Data\\Zoho.Data.csproj": {
+              "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Data\\Zoho.Data.csproj"
             },
-            "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Data\\Zoho.Data.csproj": {
-              "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Data\\Zoho.Data.csproj"
+            "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.IRepository\\Zoho.Interface.csproj": {
+              "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.IRepository\\Zoho.Interface.csproj"
             },
-            "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.IRepository\\Zoho.Interface.csproj": {
-              "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.IRepository\\Zoho.Interface.csproj"
-            },
-            "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Repository\\Zoho.Repository.csproj": {
-              "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Repository\\Zoho.Repository.csproj"
+            "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Repository\\Zoho.Repository.csproj": {
+              "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Repository\\Zoho.Repository.csproj"
             }
           }
         }

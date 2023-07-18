@@ -58,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.DTOs\\Zoho.DTOs.csproj",
+      "projectUniqueName": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.DTOs\\Zoho.DTOs.csproj",
       "projectName": "Zoho.DTOs",
-      "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.DTOs\\Zoho.DTOs.csproj",
+      "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.DTOs\\Zoho.DTOs.csproj",
       "packagesPath": "C:\\Users\\BhushanD\\.nuget\\packages\\",
-      "outputPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.DTOs\\obj\\",
+      "outputPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.DTOs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

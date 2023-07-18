@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Comman\\Zoho.Comman.csproj": {}
+    "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Comman\\Zoho.Comman.csproj": {}
   },
   "projects": {
-    "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Comman\\Zoho.Comman.csproj": {
+    "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Comman\\Zoho.Comman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Comman\\Zoho.Comman.csproj",
+        "projectUniqueName": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Comman\\Zoho.Comman.csproj",
         "projectName": "Zoho.Comman",
-        "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Comman\\Zoho.Comman.csproj",
+        "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Comman\\Zoho.Comman.csproj",
         "packagesPath": "C:\\Users\\BhushanD\\.nuget\\packages\\",
-        "outputPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Comman\\obj\\",
+        "outputPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Comman\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

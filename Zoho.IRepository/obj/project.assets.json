@@ -92,11 +92,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.IRepository\\Zoho.Interface.csproj",
+      "projectUniqueName": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.IRepository\\Zoho.Interface.csproj",
       "projectName": "Zoho.Interface",
-      "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.IRepository\\Zoho.Interface.csproj",
+      "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.IRepository\\Zoho.Interface.csproj",
       "packagesPath": "C:\\Users\\BhushanD\\.nuget\\packages\\",
-      "outputPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.IRepository\\obj\\",
+      "outputPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.IRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -117,11 +117,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Domain\\Zoho.Domain.csproj": {
-              "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.Domain\\Zoho.Domain.csproj"
+            "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Domain\\Zoho.Domain.csproj": {
+              "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.Domain\\Zoho.Domain.csproj"
             },
-            "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.DTOs\\Zoho.DTOs.csproj": {
-              "projectPath": "D:\\Bhushan Doble\\ZOHO\\Zoho\\Zoho.DTOs\\Zoho.DTOs.csproj"
+            "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.DTOs\\Zoho.DTOs.csproj": {
+              "projectPath": "D:\\Bhushan Doble\\ZOHO-Clone-Folder\\Zoho\\Zoho.DTOs\\Zoho.DTOs.csproj"
             }
           }
         }

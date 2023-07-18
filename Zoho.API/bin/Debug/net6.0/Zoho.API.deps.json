@@ -23,7 +23,6 @@
           "Swashbuckle.AspNetCore": "6.5.0",
           "System.IdentityModel.Tokens.Jwt": "6.32.0",
           "UnitOfWorkDemo.Infrastructure": "1.0.0",
-          "UnitOfWorkDemo.Services": "1.0.0",
           "Zoho.AutoMapper": "1.0.0",
           "Zoho.Data": "1.0.0",
           "Zoho.Interface": "1.0.0",
@@ -1063,21 +1062,11 @@
           "Dapper": "2.0.143",
           "System.Data.SqlClient": "4.8.5",
           "UnitOfWorkDemo.Core": "1.0.0",
-          "UnitOfWorkDemo.Services": "1.0.0",
           "Zoho.Data": "1.0.0",
           "Zoho.Domain": "1.0.0"
         },
         "runtime": {
           "UnitOfWorkDemo.Infrastructure.dll": {}
-        }
-      },
-      "UnitOfWorkDemo.Services/1.0.0": {
-        "dependencies": {
-          "UnitOfWorkDemo.Core": "1.0.0",
-          "Zoho.Domain": "1.0.0"
-        },
-        "runtime": {
-          "UnitOfWorkDemo.Services.dll": {}
         }
       },
       "Zoho.AutoMapper/1.0.0": {
@@ -1090,22 +1079,10 @@
           "Zoho.AutoMapper.dll": {}
         }
       },
-      "Zoho.Dapper/1.0.0": {
-        "dependencies": {
-          "Dapper": "2.0.143",
-          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
-          "System.Data.SqlClient": "4.8.5",
-          "Zoho.Domain": "1.0.0"
-        },
-        "runtime": {
-          "Zoho.Dapper.dll": {}
-        }
-      },
       "Zoho.Data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
-          "Zoho.Dapper": "1.0.0",
           "Zoho.Domain": "1.0.0"
         },
         "runtime": {
@@ -1848,17 +1825,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "UnitOfWorkDemo.Services/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Zoho.AutoMapper/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Zoho.Dapper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
